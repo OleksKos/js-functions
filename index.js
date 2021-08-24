@@ -173,3 +173,45 @@ for (let key in usersRec) {
 }
 // userRecursion(usersRec.Ivanov)
 console.groupEnd();
+
+console.group('Recursion animation');
+let position = 0;
+const blockAnum = document.querySelector('.block');
+console.log(blockAnum);
+function recursionAnimation() {
+  position++;
+  if (position > 480) {
+    return;
+  }
+  blockAnum.style.left = position + 'px';
+  animation();
+}
+
+function animation() {
+  setTimeout(recursionAnimation, 200)
+}
+
+animation();
+console.groupEnd();
+
+console.group('Factorial');
+function fact(n) {
+  let s = 1;
+  for (let i = 1; i <= n; i++) {
+    s = s * i;
+  }
+  console.log(s)
+}
+fact(5);
+
+let s = 1;
+function fact2(n) {
+  if (n === 0) return;
+  s = s * n;
+  fact2(n - 1);
+}
+fact2(5);
+console.log(s)
+console.groupEnd();
+
+console.log('gfgfgfgfg');

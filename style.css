@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation {
+  width: 500px;
+  position: relative;
+  border: 1px solid black;
+  height: 20px;
+}
+
+.block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: red;
+  width: 20px;
+  height: 20px
+}
