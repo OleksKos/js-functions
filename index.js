@@ -214,4 +214,3 @@ fact2(5);
 console.log(s)
 console.groupEnd();
 
-console.log('gfgfgfgfg');
